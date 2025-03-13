@@ -17,7 +17,7 @@ namespace Ice_Task_3
 
         public void Display()
         {
-            Console.WriteLine($"Area of {name}= ");
+            Console.WriteLine(""{name});
         }
     }
 }
