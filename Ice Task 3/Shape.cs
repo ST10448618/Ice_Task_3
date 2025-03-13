@@ -8,16 +8,18 @@ namespace Ice_Task_3
 {
     abstract class Shape
     {
-        string name {  get; set; }
+        public string Name { get; set; }
 
+        // Constructor
         public Shape(string name)
         {
-            this.name = name;
+            Name = name;
         }
 
-        public void Display()
+        // Virtual Display Method
+        public virtual void Display()
         {
-            Console.WriteLine(""{name});
+            Console.WriteLine($"Shape: {Name}");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ice_Task_3
 {
-    class Rectangle: Shape
+    class Rectangle: Shape,CalculateArea
     {
         double length {  get; set; }
         double width { get; set; }
@@ -17,9 +17,16 @@ namespace Ice_Task_3
             this.width = width;
         }
 
-        public void Display()
+        public double CalculateArea()
         {
-            Console.WriteLine($"Surface Area: ");
+            return width * length;
+        }
+
+        // Override Display method
+        public override void Display()
+        {
+            base.Display();
+            Console.WriteLine($"Width: {width}, Height: {length}, Area: {CalculateArea()}");
         }
     }
 }

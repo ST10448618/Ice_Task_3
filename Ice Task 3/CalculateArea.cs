@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ice_Task_3
 {
-    interface CalculateArea
+    public interface CalculateArea
     {
-
+        double CalculateArea();
     }
 }
