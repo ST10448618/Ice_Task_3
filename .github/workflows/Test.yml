@@ -19,7 +19,7 @@ jobs:
       - name: SetupSDK
         uses: actions/setup-dotnet@v4
         with: 
-          dotnet-versions: '9.0' #change to framework used
+          dotnet-version: '9.0' #change to framework used
 
           #Restore Dependencies
       - name: Restore Dependencies
