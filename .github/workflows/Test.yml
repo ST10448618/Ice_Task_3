@@ -21,7 +21,7 @@ jobs:
           dotnet-versions: '9.0' #change to framework used
 
           #Restore Dependicies
-      - name: Restore Dependancies
+      - name: Restore Dependencies
         run: dotnet restore
 
         #Run Unit Tests
