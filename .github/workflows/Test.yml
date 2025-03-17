@@ -6,6 +6,7 @@ on:
   pull_request:
     branches : ["master"]
 
+
 jobs:
     build:
       runs-on: ubuntu-latest # Uses a VM Runner
@@ -20,7 +21,7 @@ jobs:
         with: 
           dotnet-versions: '9.0' #change to framework used
 
-          #Restore Dependicies
+          #Restore Dependencies
       - name: Restore Dependencies
         run: dotnet restore
 
